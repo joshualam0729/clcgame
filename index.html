@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Game of Fortune</title>
+    <link rel="stylesheet" href="monopoly.css">
+</head>
+
+<body>
+	<!-- game settings -->
+	<div class="setting full">
+		<div class="welcome middle">Welcome to the Game of Fortune~</div>
+		<div class="choosebox middle">
+			<h2 class="blacknwhite">Initial Assets</h2>
+			<ul>
+				<li>10000</li>
+				<li>15000</li>
+				<li>20000</li>
+				<li>25000</li>
+			</ul>
+		</div>
+		<div class="choosechr middle">
+			<h2 class="blacknwhite">Please Choose Your Character</h2>
+			<ul>
+				<li><img class="middle" src="img/Red.png" alt=""><h3>Red</h3></li>
+				<li><img class="middle" src="img/Orange.png" alt=""><h3>Orange</h3></li>
+				<li><img class="middle" src="img/yellow.png" alt=""><h3>Yellow</h3></li>
+				<li><img class="middle" src="img/green.png" alt=""><h3>Green</h3></li>
+				<li><img class="middle" src="img/blue.png" alt=""><h3>Blue</h3></li>
+				<li><img class="middle" src="img/purple.png" alt=""><h3>Purple</h3></li>
+				<li><img class="middle" src="img/pink.png" alt=""><h3>Pink</h3></li>
+			</ul>
+		</div>
+	</div>
+	<!-- map -->
+	<div class="map full">
+		<!-- center -->
+		<div class="big-box">
+			<h1 class="title"></h1>
+			<!-- buttons -->
+			<button  class='blacknwhite' style="z-index: 3;">Info</button>
+			<button  class='blacknwhite'>Increase Speed</button>
+			<button  class='blacknwhite'>Turn On Autoplay</button>
+			<span>Current Day(s): <b>0</b></span>
+			<!-- dice area -->
+			<div class="control middle">
+				<div class="dice middle"></div>
+			</div>
+			<!-- player info -->
+			<div class="info"></div>
+			<div class="instruction full">
+				<h2>Features</h2>
+				<ul>
+					<li>Players receive $1000 every time they go past the starting point. If they stop at the starting point, they might get more.</li>
+					<li>Press "Increase Speed" or "Normal Speed"to change the speed of the game.</li>
+					<li>Press "Turn On Autoplay" to let the computer play for all players.</li>
+				</ul>
+				<h2>How To Play</h2>
+				<ul>
+					<li>Press the dice to roll it. AI players will roll the dice on their own.</li>
+					<li>Goal: Make everyone else bankrupt!</li>
+					<li>Every box triggers a certain event of the following types:</li>
+					<li>Real Estate: Players can purchase and upgrade real estates. Other players have to pay rent when they stop at someone else's real estate.</li>
+					<li>Fates and Chances: Randomly trigger a good event or a bad event</li>
+					<li>Property Tax: Pay a random amount of tax</li>
+					<li>Casino: Get 500 times the number shown on the dice</li>
+					<li>Free Money & Starting Point: Get a random amount of money</li>
+					<li>Jail: Stuck there for a random number of days</li>
+					<li>The Alps: Stuck there for a random number of days and spend a random amount of money</li>
+					<li>Airport: Spend a certain amount of money on transportation</li>
+					<li>Rent Mechanism: There are 4 levels: land, house, mansion and hotel. The higher the level, the higher the rent.</li>
+					<li>Bankruptcy: If a player owns less than $0, the player is bankrupt. All owned real estates will be confisticated and can be bought by other players.</li>
+				</ul>
+				<h2>Enjoy your game~</h2>
+			</div>
+		</div>
+	</div>
+	<!-- purchse dialog -->
+	<div class="dialog middle">
+		<p class="middle"></p>
+		<h2 class='blacknwhite'>Purchase Real Estate</h2>
+		<div class="btn">Yes</div>
+		<div class="btn">No</div>
+	</div>
+	<!-- message box -->
+	<div class="msgbox middle"></div>
+	<!-- real esatae info -->
+	<div class="infobox middle">
+		<h2 class='blacknwhite'>Russia</h2>
+		<ul>
+			<li>Owner: </li>
+			<li>Price: </li>
+			<li></li>
+		</ul>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
